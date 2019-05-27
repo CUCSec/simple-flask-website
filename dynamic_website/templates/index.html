@@ -4,7 +4,7 @@
 <head>
     <title>Python 真难</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/static/styles.css">
 </head>
 
 <body>
@@ -12,18 +12,14 @@
 
     <p>但有很多可爱的同学可以帮助我，他们是：</p>
 
-    <ul>
-        {% for student in students %}
-        <li>{{student}}</li>
-        {% endfor %}
-    </ul>
-
-    <a href="index.html?page=1">[1]</a>
-    <a href="index.html?page=2">[2]</a>
-    <a href="index.html?page=3">[3]</a>
-    <a href="index.html?page=4">[4]</a>
+    <div class="scrollload-container">
+        <ul class="scrollload-content">
+        </ul>
+    </div>
 </body>
 
-<script src="/scripts.js"></script>
+<script src="/static/jQuery-2.1.4.min.js"></script>
+<script src="/static/scrollload.js"></script>
+<script src="/static/scripts.js"></script>
 
 </html>
